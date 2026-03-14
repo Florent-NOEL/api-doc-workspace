@@ -1,7 +1,8 @@
-package flo.api_doc.api_endpoint;
+package apidoc.infra.api_doc.endpoint;
 
-import doc_api.ManageDocumentInterface;
-import model.Document;
+
+import apidoc.core.model.Document;
+import apidoc.core.port.doc_api.ManageDocumentInterface;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

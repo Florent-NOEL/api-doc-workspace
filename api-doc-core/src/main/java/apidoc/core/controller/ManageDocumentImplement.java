@@ -1,13 +1,12 @@
-package controller;
+package apidoc.core.controller;
 
-import doc_api.ManageDocumentInterface;
-import doc_spi.ManageDocumentPersistanceInterface;
-import exception.DocumentNotFoundException;
-import model.Document;
+import apidoc.core.port.doc_api.ManageDocumentInterface;
+import apidoc.core.port.doc_spi.ManageDocumentPersistanceInterface;
+import apidoc.core.exception.exception.DocumentNotFoundException;
+import apidoc.core.model.Document;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class ManageDocumentImplement implements ManageDocumentInterface {
     private final ManageDocumentPersistanceInterface persistanceInterface;

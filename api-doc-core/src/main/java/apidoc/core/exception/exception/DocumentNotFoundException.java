@@ -1,4 +1,4 @@
-package exception;
+package apidoc.core.exception.exception;
 
 
 public class DocumentNotFoundException extends RuntimeException {

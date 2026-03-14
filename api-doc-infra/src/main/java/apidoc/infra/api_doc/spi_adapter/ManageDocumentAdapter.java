@@ -1,11 +1,11 @@
-package flo.api_doc.spi_adapter;
+package apidoc.infra.api_doc.spi_adapter;
 
-import doc_spi.ManageDocumentPersistanceInterface;
-import model.Document;
+
+import apidoc.core.model.Document;
+import apidoc.core.port.doc_spi.ManageDocumentPersistanceInterface;
 import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
