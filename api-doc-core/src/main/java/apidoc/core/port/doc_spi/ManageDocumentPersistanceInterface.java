@@ -1,6 +1,6 @@
-package doc_spi;
+package apidoc.core.port.doc_spi;
 
-import model.Document;
+import apidoc.core.model.Document;
 
 import java.util.List;
 import java.util.Optional;

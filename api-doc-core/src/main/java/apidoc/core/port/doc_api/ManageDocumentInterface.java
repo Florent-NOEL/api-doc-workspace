@@ -1,5 +1,5 @@
-package doc_api;
-import model.Document;
+package apidoc.core.port.doc_api;
+import apidoc.core.model.Document;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package flo.api_doc.conf;
+package apidoc.infra.api_doc.conf;
 
-import controller.ManageDocumentImplement;
-import doc_api.ManageDocumentInterface;
-import doc_spi.ManageDocumentPersistanceInterface;
-import flo.api_doc.spi_adapter.ManageDocumentAdapter;
+
+import apidoc.core.controller.ManageDocumentImplement;
+import apidoc.infra.api_doc.spi_adapter.ManageDocumentAdapter;
+import apidoc.core.port.doc_api.ManageDocumentInterface;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

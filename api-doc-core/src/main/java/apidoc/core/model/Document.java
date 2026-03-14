@@ -1,4 +1,4 @@
-package model;
+package apidoc.core.model;
 
 public class Document {
     private String name;
