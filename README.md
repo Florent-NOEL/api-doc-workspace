@@ -6,5 +6,5 @@ POSTGRES_USER=dbuser
 POSTGRES_PASSWORD=dbpassword
 
 # Create the database
-At the first run turn ddl-auto: update to ddl-auto: validate to create the postgres database.
+At the first run in the application.yml turn ddl-auto: validate to ddl-auto: update to create the postgres database.
 then turn it back to validate.
