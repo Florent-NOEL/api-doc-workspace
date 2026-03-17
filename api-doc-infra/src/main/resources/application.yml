@@ -1,15 +1,11 @@
 spring:
   application:
     name: api-doc-hexagonal
-  datasource:
-    url: jdbc:postgresql://localhost:5432/documents_db
-    username: ${app_user}
-    password: ${app_password}
 
-    jpa:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
       hibernate:
-        ddl-auto: update
-      show-sql: true
-      properties:
-        hibernate:
-          format_sql: true
+        format_sql: true
