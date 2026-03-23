@@ -29,4 +29,9 @@ public class ManageDocumentImplement implements ManageDocumentInterface {
     public List<Document> findAll() {
         return persistanceInterface.findAll().orElse(new ArrayList<>());
     }
+
+    @Override
+    public void deletDocumentByName(String name) {
+        persistanceInterface.deleteDocumentByName(name);
+    }
 }

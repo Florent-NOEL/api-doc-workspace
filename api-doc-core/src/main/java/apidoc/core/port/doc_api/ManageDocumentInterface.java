@@ -7,4 +7,5 @@ public interface ManageDocumentInterface {
     Document findDocumentByName(String name);
     Document createDocument(Document document);
     List<Document> findAll();
+    void deletDocumentByName(String name);
 }

@@ -54,6 +54,13 @@ public class ManageDocumentAdapter implements ManageDocumentPersistanceInterface
         }
         return Optional.of(documentListResponse);
     }
-//    private Document mockDocument = new Document("fake name", "Hello world".getBytes(StandardCharsets.UTF_8));
-//    private List<Document> mockListDocument = Arrays.asList(mockDocument, mockDocument);
+
+    @Override
+    public void deleteDocumentByName(String name) {
+        try {
+            documentJpaExtends.deleteById(name);
+        }  catch (JpaSystemException exception) {
+            throw new JpaSystemException(exception);
+        }
+    }
 }

@@ -9,4 +9,5 @@ public interface ManageDocumentPersistanceInterface {
     Optional<Document> findDocumentByName(String name);
     Optional<Document> createDocument(Document document);
     Optional<List<Document>> findAll();
+    void deleteDocumentByName(String name);
 }

@@ -31,4 +31,9 @@ public class ManageDocumentRequest {
         List<Document> documentListResponse = manageDocumentInterface.findAll();
         return ResponseEntity.status(200).body(documentListResponse);
     }
+    @DeleteMapping("/delete/{name}")
+    public ResponseEntity<Void> deleteDocumentByName(@PathVariable String name) {
+        manageDocumentInterface.deletDocumentByName(name);
+        return ResponseEntity.noContent().build();
+    }
 }
